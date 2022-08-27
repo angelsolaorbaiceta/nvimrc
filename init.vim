@@ -13,3 +13,15 @@ set incsearch
 " switch on the syntax highlighting
 syntax on
 
+" Plugins (Vim Plug)
+" See: https://github.com/junegunn/vim-plug
+call plug#begin()
+
+" Golang server
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+call plug#end()
+
+" vim-go
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
