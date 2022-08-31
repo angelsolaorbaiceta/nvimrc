@@ -10,6 +10,9 @@ set ruler
 " display matches for a seach while you type
 set incsearch
 
+" highlight search results         
+set hlsearch   
+
 " switch on the syntax highlighting
 syntax on
 
@@ -17,8 +20,17 @@ syntax on
 " See: https://github.com/junegunn/vim-plug
 call plug#begin()
 
-" Golang server
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+  " Golang server
+  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+  " Better syntax support for multiple languages
+  Plug 'sheerun/vim-polyglot'
+
+	" File Explorer
+	Plug 'preservim/nerdtree'
+
+	" Auto pairs for '(' '[' '{'
+	Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
