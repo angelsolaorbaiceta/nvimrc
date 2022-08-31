@@ -25,12 +25,12 @@ call plug#begin()
 
   " Better syntax support for multiple languages
   Plug 'sheerun/vim-polyglot'
-
-	" File Explorer
-	Plug 'preservim/nerdtree'
-
-	" Auto pairs for '(' '[' '{'
-	Plug 'jiangmiao/auto-pairs'
+  
+  " File Explorer
+  Plug 'preservim/nerdtree'
+  
+  " Auto pairs for '(' '[' '{'
+  Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
