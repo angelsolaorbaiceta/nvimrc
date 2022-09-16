@@ -16,6 +16,9 @@ set hlsearch
 " switch on the syntax highlighting
 syntax on
 
+" Use Ctrl-J to break a line in normal mode
+:nnoremap <NL> i<CR><ESC>
+
 " Plugins (Vim Plug)
 " See: https://github.com/junegunn/vim-plug
 call plug#begin()
