@@ -1,5 +1,6 @@
-" show line numbers in the left side
-set number
+" turn hybrid line numbers on
+set number relativenumber
+set nu rnu
 
 " use the indent of the previous line for a newly created line
 set autoindent
