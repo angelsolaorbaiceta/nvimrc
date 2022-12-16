@@ -22,6 +22,7 @@ syntax on
 
 " Plugins (Vim Plug)
 " See: https://github.com/junegunn/vim-plug
+" See: https://vimawesome.com
 call plug#begin()
 
   " Golang server
@@ -29,15 +30,27 @@ call plug#begin()
 
   " Better syntax support for multiple languages
   Plug 'sheerun/vim-polyglot'
-  
+
   " File Explorer
   Plug 'preservim/nerdtree'
-  
+
   " Auto pairs for '(' '[' '{'
   Plug 'jiangmiao/auto-pairs'
 
-call plug#end()
+  " Surround with: https://vimawesome.com/plugin/surround-vim
+  Plug 'tpope/vim-surround'
+
+  " GitHub Copilot
+  Plug 'github/copilot.vim'
+
+  " Nighfox colorscheme: https://github.com/EdenEast/nightfox.nvim
+  Plug 'EdenEast/nightfox.nvim'
+
+  call plug#end()
 
 " vim-go
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
+
+" Set nightfox theme
+colorscheme nightfox
