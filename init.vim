@@ -46,6 +46,11 @@ call plug#begin()
   " Nighfox colorscheme: https://github.com/EdenEast/nightfox.nvim
   Plug 'EdenEast/nightfox.nvim'
 
+  " Telescope: https://vimawesome.com/plugin/telescope-nvim-care-of-itself
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-telescope/telescope.nvim'
+  
+
   call plug#end()
 
 " vim-go
@@ -54,3 +59,10 @@ let g:go_info_mode='gopls'
 
 " Set nightfox theme
 colorscheme nightfox
+
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
