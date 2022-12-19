@@ -34,6 +34,9 @@ call plug#begin()
   " File Explorer
   Plug 'preservim/nerdtree'
 
+  " Treesitter: https://github.com/nvim-treesitter/nvim-treesitter
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
   " Auto pairs for '(' '[' '{'
   Plug 'jiangmiao/auto-pairs'
 
