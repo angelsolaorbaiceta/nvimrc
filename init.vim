@@ -1,3 +1,6 @@
+" Set the spacebar as the leader
+let mapleader=" "
+
 " turn hybrid line numbers on
 set number relativenumber
 set nu rnu
@@ -59,6 +62,13 @@ call plug#begin()
 " vim-go
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
+
+map <C-n> :cnext<CR>
+map <C-m> :cprevious<CR>
+nnoremap <leader>a :cclose<CR>
+
+autocmd FileType go nmap <leader>b  <Plug>(go-build)
+autocmd FileType go nmap <leader>r  <Plug>(go-run)
 
 " Set nightfox theme
 colorscheme nightfox
